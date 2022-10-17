@@ -1,0 +1,62 @@
+a {
+    color: #c40b00;
+}
+
+.wrap {
+    max-width: 1000px;
+}
+
+/* - 侧边栏 */
+.sidebar {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    color: #fff;
+    width: 250px;
+    position: fixed;
+    overflow: hidden;
+    overflow-y: auto;
+    background: #4b4b4b;
+}
+
+.sidebar .avatar {
+    width: 150px;
+    height: 150px;
+    margin: 2em auto;
+    background: #fff;
+    border-radius: 100%;
+    border: #fff 5px solid;
+    transition: transform 0.5s;
+}
+
+.sidebar .avatar:hover {
+    transform: rotate(1turn);
+}
+
+.sidebar .avatar img {
+    border-radius: 100%;
+}
+
+/* -- 侧边栏导航 */
+.sidebar .nav {
+    margin: 0;
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+}
+
+.sidebar .nav a {
+    color: #fff;
+    padding: 1em;
+    display: block;
+    text-align: center;
+    transition: background .3s, box-shadow .3s;
+}
+
+.sidebar .nav a:hover {
+    background: rgba(0, 0, 0, .2);
+}
+
+main {
+    margin-left: 250px;
+}
